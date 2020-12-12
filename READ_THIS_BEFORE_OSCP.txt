@@ -60,6 +60,9 @@ wget http://192.168.184.129:8081/suid.py
 
 
 ==============port 80============
+Before doing gobuster check this site ::::::
+https://redteamtutorials.com/2018/11/19/gobuster-cheatsheet/
+
 gobuster dir -u http://192.168.184.139 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -x .php,.html -o gobuster.out
 gobuster vhost -u http://192.168.184.139 -w common-vhosts.txt
 nikto -h $RHOST -o nikto-out.txt
